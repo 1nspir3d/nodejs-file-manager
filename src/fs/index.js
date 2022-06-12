@@ -4,7 +4,7 @@ import add from "./add.js";
 import rn from "./rn.js";
 // import cp from "./cp.js";
 // import mv from "./mv.js";
-// import rm from "./rm.js";
+import rm from "./rm.js";
 
 const fsController = async (command, args, homeDir, rootDir) => {
   switch (command) {
@@ -23,9 +23,9 @@ const fsController = async (command, args, homeDir, rootDir) => {
     // case "mv":
     //   await mv();
     //   break;
-    // case "rm":
-    //   await rm();
-    //   break;
+    case "rm":
+      await rm(args, homeDir);
+      break;
     default:
       logs.IILog();
       break;
