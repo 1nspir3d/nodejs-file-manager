@@ -1,7 +1,7 @@
-import { readdir } from "node:fs/promises";
+import { stat } from "node:fs/promises";
 const dirExists = async (path) => {
   try {
-    await readdir(path);
+    await stat(path);
     return true;
   } catch (error) {
     return false;
