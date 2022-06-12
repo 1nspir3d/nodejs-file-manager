@@ -3,7 +3,7 @@ import cat from "./cat.js";
 import add from "./add.js";
 import rn from "./rn.js";
 // import cp from "./cp.js";
-// import mv from "./mv.js";
+import mv from "./mv.js";
 import rm from "./rm.js";
 
 const fsController = async (command, args, homeDir, rootDir) => {
@@ -20,9 +20,9 @@ const fsController = async (command, args, homeDir, rootDir) => {
     // case "cp":
     //   await cp();
     //   break;
-    // case "mv":
-    //   await mv();
-    //   break;
+    case "mv":
+      await mv(args, homeDir);
+      break;
     case "rm":
       await rm(args, homeDir);
       break;
