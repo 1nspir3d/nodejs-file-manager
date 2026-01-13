@@ -1,0 +1,25 @@
+{
+  "name": "nodejs-file-manager",
+  "version": "1.0.0",
+  "description": "NodeJS File Manager by 1nspir3d",
+  "type": "module",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node src/index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/1nspir3d/nodejs-file-manager.git"
+  },
+  "keywords": [
+    "nodejs",
+    "file-manager",
+    "1nspir3d"
+  ],
+  "author": "1nspir3d",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/1nspir3d/nodejs-file-manager/issues"
+  },
+  "homepage": "https://github.com/1nspir3d/nodejs-file-manager#readme"
+}
